@@ -32,9 +32,11 @@ Released by Abner G Jacobsen, Fri 18 Nov 2016 -
 [see the diff](https://github.com/admindaspanel/alpine-base-edge/compare/...#diff)
 ______________
 
-### 0.3.0-820b272
+### 0.3.1
 __Changes__
 
+- bumped to version 0.3.1
+- Patch release
 - Added package ca-certificates
 - See changes in CHANGELOG.md
 - bumped to version 0.3.0
@@ -50,7 +52,7 @@ __Contributors__
 - Abner G Jacobsen
 
 Released by Abner G Jacobsen, Sun 27 Nov 2016 -
-[see the diff](https://github.com/admindaspanel/alpine-base-edge/compare/675257927983aa89fd8beff517a0862dc7ea683d...0.3.0-820b272#diff)
+[see the diff](https://github.com/admindaspanel/alpine-base-edge/compare/675257927983aa89fd8beff517a0862dc7ea683d...0.3.1#diff)
 ______________
 
 
