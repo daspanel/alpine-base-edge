@@ -17,8 +17,8 @@ RUN set -x \
     # This folder is in $PATH by default but isn't created by default
     && mkdir -p /usr/local/sbin \
 
-    # Install wget with --no-check-certificate option and other utilities
-    && apk add --no-cache wget ssmtp \
+    # Install minimal packages
+    && apk add --no-cache ca-certificates wget ssmtp \
 
     # Install s6 overlay
     && wget https://github.com/just-containers/s6-overlay/releases/download/${S6_OVERLAY_VERSION}/s6-overlay-amd64.tar.gz --no-check-certificate -O /tmp/s6-overlay.tar.gz \
