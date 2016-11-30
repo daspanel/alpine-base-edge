@@ -1,5 +1,10 @@
 #!/usr/bin/with-contenv sh
 
+USER_ID=${LOCAL_USER_ID:-1000}
+echo "Starting with UID : $USER_ID"
+addgroup -g $USER_ID daspanel
+adduser -s /bin/false -D -H -u $USER_ID -G daspanel daspanel
+
 # Master admin email must be informed
 if [ -z "$DASPANEL_MASTER_EMAIL" ]; then
     echo "***"
@@ -33,4 +38,7 @@ if [ ! -d "/opt/daspanel/log/$DASPANEL_GUUID" ]; then
 	mkdir -p "/opt/daspanel/log/$DASPANEL_GUUID"
 fi
 
+# secure daspanel
+chown -R daspanel:daspanel /opt/daspanel/data
+chown -R daspanel:daspanel /opt/daspanel/log
 
