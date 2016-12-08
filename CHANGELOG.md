@@ -48,9 +48,30 @@ Released by Abner G Jacobsen, Sun 27 Nov 2016 -
 [see the diff](https://github.com/admindaspanel/alpine-base-edge/compare/...#diff)
 ______________
 
-### 0.3.2
+### alpine-base-edge-0.3.2
 __Changes__
 
+- See changes in CHANGELOG.md
+- bumped to version 0.3.2
+- Create default user:group daspanel:daspanel in runtime with default uid:gid = 1000:1000. Can be set using env variable LOCAL_USER_ID. Writable data in /opt/daspanel/data is owned by this uid and gid.
+- Added command's to used docker-compose.dev.yml in development.
+
+__Contributors__
+
+- Abner G Jacobsen
+
+Released by Abner G Jacobsen, Wed 30 Nov 2016 -
+[see the diff](https://github.com/admindaspanel/alpine-base-edge/compare/...#diff)
+______________
+
+### 0.3.3
+__Changes__
+
+- bumped to version 0.3.3
+- Added su-exec to base image. It is to be used like gosu to run programs with specific user:group privileges.
+- Added to .dockerignore additional files and dirs
+- Added to .gitignore additional files and dirs
+- See changes in CHANGELOG.md
 - bumped to version 0.3.2
 - Create default user:group daspanel:daspanel in runtime with default uid:gid = 1000:1000. Can be set using env variable LOCAL_USER_ID. Writable data in /opt/daspanel/data is owned by this uid and gid.
 - Added command's to used docker-compose.dev.yml in development.
@@ -71,8 +92,8 @@ __Contributors__
 
 - Abner G Jacobsen
 
-Released by Abner G Jacobsen, Wed 30 Nov 2016 -
-[see the diff](https://github.com/admindaspanel/alpine-base-edge/compare/675257927983aa89fd8beff517a0862dc7ea683d...0.3.2#diff)
+Released by Abner G Jacobsen, Thu 08 Dec 2016 -
+[see the diff](https://github.com/admindaspanel/alpine-base-edge/compare/675257927983aa89fd8beff517a0862dc7ea683d...0.3.3#diff)
 ______________
 
 
