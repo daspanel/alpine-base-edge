@@ -1,16 +1,18 @@
 FROM alpine:edge
 MAINTAINER Abner G Jacobsen - http://daspanel.com <admin@daspanel.com>
 
-# Stop container initialization if error occurs in cont-init.d, fix-attrs.d script's
-ENV S6_BEHAVIOUR_IF_STAGE2_FAILS=2
+# Set default env variables
+ENV \
+    # Stop container initialization if error occurs in cont-init.d, fix-attrs.d script's
+    S6_BEHAVIOUR_IF_STAGE2_FAILS=2 \
+
+    # Timezone
+    TZ="UTC" \
+
+    # S6 overlay version
+    S6_OVERLAY_VERSION=v1.18.1.5
 
 LABEL distro="alpine" distro_version="3.4" architecture="amd64"
-
-# Set time zone
-ENV TZ="UTC"
-
-# Add s6-overlay
-ENV S6_OVERLAY_VERSION=v1.18.1.5
 
 RUN set -x \
 
