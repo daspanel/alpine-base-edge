@@ -64,9 +64,30 @@ Released by Abner G Jacobsen, Wed 30 Nov 2016 -
 [see the diff](https://github.com/admindaspanel/alpine-base-edge/compare/...#diff)
 ______________
 
-### 0.3.3
+### alpine-base-edge-0.3.3
 __Changes__
 
+- See changes in CHANGELOG.md
+- bumped to version 0.3.3
+- Added su-exec to base image. It is to be used like gosu to run programs with specific user:group privileges.
+- Added to .dockerignore additional files and dirs
+- Added to .gitignore additional files and dirs
+
+__Contributors__
+
+- Abner G Jacobsen
+
+Released by Abner G Jacobsen, Thu 08 Dec 2016 -
+[see the diff](https://github.com/admindaspanel/alpine-base-edge/compare/...#diff)
+______________
+
+### 0.3.4
+__Changes__
+
+- bumped to version 0.3.4
+- Daspanel user need home directory because some programs like Minio per default save on it some runtime/config info.
+- Optimized docker container layers putting all ENV setting in one command inside Dockerfile.
+- See changes in CHANGELOG.md
 - bumped to version 0.3.3
 - Added su-exec to base image. It is to be used like gosu to run programs with specific user:group privileges.
 - Added to .dockerignore additional files and dirs
@@ -93,7 +114,7 @@ __Contributors__
 - Abner G Jacobsen
 
 Released by Abner G Jacobsen, Thu 08 Dec 2016 -
-[see the diff](https://github.com/admindaspanel/alpine-base-edge/compare/675257927983aa89fd8beff517a0862dc7ea683d...0.3.3#diff)
+[see the diff](https://github.com/admindaspanel/alpine-base-edge/compare/675257927983aa89fd8beff517a0862dc7ea683d...0.3.4#diff)
 ______________
 
 
