@@ -3,7 +3,7 @@
 USER_ID=${LOCAL_USER_ID:-1000}
 echo "Starting with UID : $USER_ID"
 addgroup -g $USER_ID daspanel
-adduser -s /bin/false -D -H -u $USER_ID -G daspanel daspanel
+adduser -s /bin/false -D -h /home/daspanel -u $USER_ID -G daspanel daspanel
 
 # Master admin email must be informed
 if [ -z "$DASPANEL_MASTER_EMAIL" ]; then
