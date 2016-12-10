@@ -1,7 +1,7 @@
 #!/usr/bin/with-contenv sh
 
 USER_ID=${LOCAL_USER_ID:-1000}
-echo "Starting with UID : $USER_ID"
+echo "Starting with GUID : $USER_ID"
 addgroup -g $USER_ID daspanel
 adduser -s /bin/false -D -h /home/daspanel -u $USER_ID -G daspanel daspanel
 
