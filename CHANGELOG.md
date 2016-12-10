@@ -81,9 +81,28 @@ Released by Abner G Jacobsen, Thu 08 Dec 2016 -
 [see the diff](https://github.com/admindaspanel/alpine-base-edge/compare/...#diff)
 ______________
 
-### 0.3.4
+### alpine-base-edge-0.3.4
 __Changes__
 
+- See changes in CHANGELOG.md
+- bumped to version 0.3.4
+- Daspanel user need home directory because some programs like Minio per default save on it some runtime/config info.
+- Optimized docker container layers putting all ENV setting in one command inside Dockerfile.
+
+__Contributors__
+
+- Abner G Jacobsen
+
+Released by Abner G Jacobsen, Thu 08 Dec 2016 -
+[see the diff](https://github.com/admindaspanel/alpine-base-edge/compare/...#diff)
+______________
+
+### 0.3.5
+__Changes__
+
+- bumped to version 0.3.5
+- Cleandup.
+- See changes in CHANGELOG.md
 - bumped to version 0.3.4
 - Daspanel user need home directory because some programs like Minio per default save on it some runtime/config info.
 - Optimized docker container layers putting all ENV setting in one command inside Dockerfile.
@@ -113,8 +132,8 @@ __Contributors__
 
 - Abner G Jacobsen
 
-Released by Abner G Jacobsen, Thu 08 Dec 2016 -
-[see the diff](https://github.com/admindaspanel/alpine-base-edge/compare/675257927983aa89fd8beff517a0862dc7ea683d...0.3.4#diff)
+Released by Abner G Jacobsen, Sat 10 Dec 2016 -
+[see the diff](https://github.com/admindaspanel/alpine-base-edge/compare/675257927983aa89fd8beff517a0862dc7ea683d...0.3.5#diff)
 ______________
 
 
